@@ -74,7 +74,6 @@ function boton4(){
 };
 
 //EVENTOS CLICK
-
 $("#boton2").on("click", function(){
   boton2();
 });
