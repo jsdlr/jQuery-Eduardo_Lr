@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+   <meta charset="utf-8">
+	<title>jQuery Form</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 	<!-- CSS -->
+   <link rel="stylesheet" href="css/base.css"> 
+   <link rel="stylesheet" href="css/main.css">  	
+</head>
+<body> 
+<section id="contac">
+<h1 style="color:white; font-size: 50px; ">&nbsp; Js</h1>
+   	<div class="row contact-content">
+   		<div class="col-six tab-full animate-this">
+   			<h3 style="color:white;">Registro de Estudiante</h3>
+            <form name="contactForm" id="contactForm" method="post">     			
+               <div class="form-field">
+ 					   <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
+               </div>
+               <div class="row">
+                 	<div class="col-six tab-full">
+                 		<div class="form-field">
+                 			<input name="contactEmail" type="email" id="contactEmail" placeholder="Codigo" value="" required="">
+                 		</div>		      			   
+		            </div>
+	            	<div class="col-six tab-full">	            
+	            		<div class="form-field">
+	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Nota" value="">
+	                  </div>		     				   
+		            </div>
+               </div>
+               <div class="form-field col-six">
+                  <button id="boton1" class="submitform">Registrar</button>
+               </div>
+               <div class="form-field col-six">
+                  <button id="boton2" class="submitform">Promedio</button>
+               </div>
+               <div class="form-field col-six">
+                  <button id="boton3" class="submitform">Nota Mayor</button>
+               </div>
+               <div class="form-field col-six">
+                  <button id="boton4" class="submitform">Nota Menor</button>
+               </div>
+      		</form> 
+         </div> 
+         <div class="col-six tab-full contact-info end animate-this">
+			<div class="form-field">
+				<table>
+					<thead>
+					<th>Codigo</th>
+					<th>Nombre</th>
+					<th>Nota</th>
+					<th>Editar</th>
+					<th>Eliminar</th>
+					</thead>
+				<tbody id="tbody">
+				
+				</tbody>
+				</table>
+			</div>
+         </div> 
+   	</div> 
+</section> 
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+
+</html>
