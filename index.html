@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html class="no-js" lang="en"> 
-<head>
+<head> 
    <meta charset="utf-8">
 	<title>jQuery Form</title>
 	<meta name="description" content="">  
@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  	<!-- CSS -->
    <link rel="stylesheet" href="css/base.css"> 
-   <link rel="stylesheet" href="css/main.css">  	
+   <link rel="stylesheet" href="css/main.css">  
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	
 </head>
 <body> 
 <section id="contac">
@@ -16,35 +17,41 @@
    	<div class="row contact-content">
    		<div class="col-six tab-full animate-this">
    			<h3 style="color:white;">Registro de Estudiante</h3>
-            <form name="contactForm" id="contactForm" method="post">     			
-               <div class="form-field">
- 					   <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
-               </div>
-               <div class="row">
-                 	<div class="col-six tab-full">
-                 		<div class="form-field">
-                 			<input name="contactEmail" type="email" id="contactEmail" placeholder="Codigo" value="" required="">
-                 		</div>		      			   
-		            </div>
-	            	<div class="col-six tab-full">	            
-	            		<div class="form-field">
-	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Nota" value="">
-	                  </div>		     				   
-		            </div>
-               </div>
-               <div class="form-field col-six">
-                  <button id="boton1" class="submitform">Registrar</button>
-               </div>
-               <div class="form-field col-six">
-                  <button id="boton2" class="submitform">Promedio</button>
-               </div>
-               <div class="form-field col-six">
-                  <button id="boton3" class="submitform">Nota Mayor</button>
-               </div>
-               <div class="form-field col-six">
-                  <button id="boton4" class="submitform">Nota Menor</button>
-               </div>
-      		</form> 
+			
+			<form name="contactForm" id="contactForm" method="post">     			
+				
+				<div class="row">
+					<div class="col-six tab-full">
+						<div class="form-field">
+							<input name="codigo" type="text" id="id" placeholder="Codigo" value="" length="3" required>
+						</div>		      			   
+					</div>
+					<div class="col-six tab-full">	            
+						<div class="form-field">
+							<input name="nota" type="text" id="nota" placeholder="Nota" value="" minlength="1" maxlength="3" required>
+						</div>		     				   
+					</div>
+					<div class="col-twelve tab-full">
+						<div class="form-field">
+							<input name="nombre" type="text" id="nombre" placeholder="Nombre" maxlength="15" value="" required="">
+						</div>
+					</div>
+				</div>
+			
+                <div class="form-field col-six">
+                	<button id="boton1" class="submitform">Registrar</button>
+                </div>
+                <div class="form-field col-six">
+                	<button id="boton2" class="submitform">Promedio</button>
+                </div>
+                <div class="form-field col-six">
+                	<button id="boton3" class="submitform">Nota Mayor</button>
+                </div>
+                <div class="form-field col-six">
+                	<button id="boton4" class="submitform">Nota Menor</button>
+				</div>
+			</form> 
+			
          </div> 
          <div class="col-six tab-full contact-info end animate-this">
 			<div class="form-field">
@@ -56,9 +63,11 @@
 					<th>Editar</th>
 					<th>Eliminar</th>
 					</thead>
-				<tbody id="tbody">
+
+					<tbody id="tbody">
 				
-				</tbody>
+					</tbody>
+				
 				</table>
 			</div>
          </div> 
@@ -67,6 +76,7 @@
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/app.js"></script>
 
 </body>
 
